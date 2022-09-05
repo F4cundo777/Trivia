@@ -1,0 +1,11 @@
+Preguntas,1,2,3,4,Correcta
+¿Que pasa si hago un print de la siguiente variable: valor = '2' ** '3' ?,8,22222222,2' ** '3',da Error,2
+"¿Que significa ""str"" en python?",string,strange,strike,streck ,1
+¿Como se llama la guia de buenas practicas para escribir en python?,PYOK,Python_Writter,Manual_Python,PEP8,4
+"¿Cual de las siguientes sirve para indicar ""diferente a"" ?",dif to,not ,!=,not=,3
+¿Cual es el resultado de la siguiente variable: valor = 8%4?,8%4,2,4096,0,4
+¿Que simbolo se utiliza para trabajar con listas?,[] (corchetes),{} (llaves),() (parentesis),\\ (barras),1
+Para ingresar un valor en consola debemos usar la funcion:,len,input,print,str,2
+"Al hacer ""print [3]"" de la variable lista = ['A','B','C','D']. Obtengo :",B,C,D,ABC,3
+Para ingresar un comentario en el codigo de python se utiliza:,(),@,#,_,3
+La extension de archivos python es:,.py,.pyt,.pt,.pyth,1
