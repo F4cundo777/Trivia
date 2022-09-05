@@ -119,28 +119,29 @@ def trivia(jugar):
     elif puntaje_n2 > puntaje_n1:
         Puntos = [(jug_02),(puntaje_n2),(fecha)]
     else:
-        Puntos == None
-    try:
-        csvfile = open('Historico_Ganadores.csv')
-    except:    
-        csvfile = open('Historico_Ganadores.csv','w', newline='')
+        Puntos = None
+    if Puntos != None:
+        try:
+            csvfile = open('Historico_Ganadores.csv')
+        except:    
+            csvfile = open('Historico_Ganadores.csv','w', newline='')
+
+            header = ['Jugador','Puntaje','Fecha']
+            writer = csv.DictWriter(csvfile, fieldnames=header)
+            writer.writeheader()
+
+            
+        csvfile = open('Historico_Ganadores.csv','a', newline='')
 
         header = ['Jugador','Puntaje','Fecha']
         writer = csv.DictWriter(csvfile, fieldnames=header)
-        writer.writeheader()
 
-        
-    csvfile = open('Historico_Ganadores.csv','a', newline='')
+        fila = {'Jugador':Puntos[0],'Puntaje':Puntos[1],'Fecha':Puntos[2]}
 
-    header = ['Jugador','Puntaje','Fecha']
-    writer = csv.DictWriter(csvfile, fieldnames=header)
-
-    fila = {'Jugador':Puntos[0],'Puntaje':Puntos[1],'Fecha':Puntos[2]}
-
-    writer.writerow(fila)
+        writer.writerow(fila)
 
 
-    csvfile.close()
+        csvfile.close()
 
 
 if __name__ == '__main__':
